@@ -1,22 +1,161 @@
-.App {
-  text-align: center;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html {
+  font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-size: 1.6rem;
+}
+
+/* Navigation styles */
+
+.header {
+  background-color: blueviolet;
+  padding: 3rem;
+  height: 12rem;
+  margin-bottom: 1rem;
+}
+
+.nav-head {
+  margin-bottom: 1rem;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 3rem;
+  color: aqua;
+}
+
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Me page style */
+
+.me-container {
+  background-color: blueviolet;
+  padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 5rem;
+}
+
+.left-side {
+  width: 20rem;
+  height: 20rem;
+  background-color: aqua;
+}
+
+.name {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+
+.text {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+.websites {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.me-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #09d3ac;
+/* Hobbies Page styles */
+
+.hobby-container {
+  padding: 3rem;
+  background-color: blueviolet;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+.hobby-pic-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 8rem;
+}
+
+.hobby {
+  margin-bottom: 2rem;
+}
+
+.hobby-pic {
+  width: 20rem;
+  height: 20rem;
+  background-color: aqua;
+}
+
+img {
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Contacts styling */
+
+.contacts-container {
+  padding: 3rem;
+  background-color: blueviolet;
+  height: 100vh;
+}
+
+.info {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.details {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-name,
+.contact-email,
+.contact-message,
+.send-message {
+  border: 2px solid;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-message {
+  height: 15rem;
+}
+
+/* Not found style  */
+
+.not-found {
+  background-color: blueviolet;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.not-found-text {
+  text-align: center;
 }
